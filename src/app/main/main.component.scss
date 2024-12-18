@@ -1,0 +1,64 @@
+.refresh {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.refresh img {
+    padding: 5px;
+}
+kendo-dropdownlist{
+    margin-top: 1px;
+}
+.main {
+    background-color: #F7F9FC;
+    padding: 10px 20px;
+}
+.drop {
+    display: flex;
+   
+    height: 75px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.dpd {
+    margin-right: 10px;
+   
+}
+label {
+    color: #577CD8;
+   
+}
+.chips {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.bl {
+   
+    border: 1px solid #E296A9;
+    height: 75px;
+    margin-left: 10px;
+    width: 13.66%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 6px;
+    color: #850021;
+    background-color: #FFEDEE;
+
+}
+.clr {
+    border: 1px solid #1C77D6;
+    color: #1C77D6;
+    background-color: #EFF6FE;
+}
+p{
+    font-size: small;
+    margin-left: 5px;
+}

@@ -1,0 +1,45 @@
+#hdr {
+    height: 54px;
+    background-color: #10162A;
+    display: flex;
+}
+.left {
+    width: 90%;
+    display: flex;
+    align-items: center;
+   
+}
+.right {
+    width: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.img {
+    margin-right: 20px;
+}
+img.lg {
+    width: 100px;
+}
+p{
+    color: #ffffff;
+    font-size:24px ;
+    font-weight: 600;
+}
+.fnt {
+    font-size: 23px;
+    font-weight: 300;
+}
+.asse {
+    display: flex;
+    align-items: center;
+    background-color: #182C61;
+    height: 54px;
+    padding: 20px;
+}
+.hub {
+    padding: 20px;
+}
+.mnu {
+    padding: 10px;
+}
