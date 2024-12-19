@@ -1,8 +1,53 @@
 .cnt {
     background-color: #ffffff;
+    
 }
 hr {
     height: 2px;
     border: none;
     background-color: #DEE2E6;
+}
+
+.tabel {
+    
+    padding: 10px 0px;
+    margin: 0px 20px;
+
+}
+
+
+kendo-grid {
+    margin-top: 10px;
+}
+label {
+    font-weight: 600;
+}
+.icn {
+    display: flex;
+    align-items: center;
+}
+kendo-icon{
+    margin-right: 5px;
+}
+// :host ::ng-deep .k-column-title  {
+//     padding:0px 10px !important;
+// }
+
+.more {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    color:#1C77D6;
+    text-decoration: underline;
+}
+.ac {
+    background-color: #C2C2C2;
+}
+kendo-chip {
+    margin-left: 10px;
+}
+.ann {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

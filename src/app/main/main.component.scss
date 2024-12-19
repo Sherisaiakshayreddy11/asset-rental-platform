@@ -37,6 +37,7 @@ label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    justify-content: space-between;
 }
 .bl {
    
@@ -51,6 +52,7 @@ label {
     border-radius: 6px;
     color: #850021;
     background-color: #FFEDEE;
+    overflow:hidden;
 
 }
 .clr {
@@ -61,4 +63,5 @@ label {
 p{
     font-size: small;
     margin-left: 5px;
-}
+    
+} 

@@ -1,14 +1,127 @@
 <div class="cnt">
-    <div class="tabel1">
+    <div class="tabel conflicts">
+        <label for="">
+            Conflicts
+            
+        </label>
+        <kendo-grid [data]="dataItems" [size]="'small'" [scrollable]="'none'">
+            <kendo-grid-column field="assetNumber" title="Asset Number" [width]="100" class="abc" >
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    <span style="color:#1C77D6;text-decoration: underline;">
+                    
+                      {{dataItem.assetNumber}}
+                    </span>
+            
+                  </ng-template> 
+            </kendo-grid-column>
+            <kendo-grid-column field="assetCategory" title="Asset Category" [width]="180"></kendo-grid-column>
+            <kendo-grid-column field="rentalStatus" title="Rental Status" [width]="180"></kendo-grid-column>
+            <kendo-grid-column field="branch" title="Branch" [width]="250"></kendo-grid-column>
+            <kendo-grid-column field="startDate" title="Start Date" [width]="180"></kendo-grid-column>
+            <kendo-grid-column field="estimatedReturnDate" title="Estimated Return Date" [width]="250"></kendo-grid-column>
+            <kendo-grid-column field="cancel" title="" [width]="140">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    <span style="color:#1C77D6;" class="icn">
+                      <kendo-icon name="error" ></kendo-icon>
+                      {{dataItem.cancel}}
+                    </span>
+            
+                  </ng-template> 
+            </kendo-grid-column>
+
+        </kendo-grid>
+
+    </div>
+    <div class="more">See More</div>
+    <!-- <div class="more"><p>See More</p></div> -->
+    <hr>
+    <div class="tabel Upcoming-Reservations">
+        <div class="ann" >
+            <label for="">Upcoming Reservations</label>
+            <div style="float: right;">
+                <kendo-chip class="ac">All</kendo-chip>
+                <kendo-chip >Next 3 Days</kendo-chip>
+                <kendo-chip >Next 1 Week</kendo-chip>
+
+                <kendo-chip  >Next 1 Month</kendo-chip>
+
+                
+
+            </div>
+        </div>
         
+        <kendo-grid [data]="listItems" [size]="'small'" [scrollable]="'none'">
+            <kendo-grid-column field="asset" title="Asset #" [width]="115">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    <span style="color:#1C77D6;text-decoration: underline;">
+                    
+                      {{dataItem.asset}}
+                    </span>
+            
+                  </ng-template> 
+            </kendo-grid-column>
+            <kendo-grid-column field="po" title="PO#" [width]="126">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    <span style="color:#1C77D6;text-decoration: underline;">
+                    
+                      {{dataItem.po}}
+                    </span>
+            
+                  </ng-template> 
+            </kendo-grid-column>
 
+            <kendo-grid-column field="assetCategory" title="Asset Category" [width]="180"></kendo-grid-column>
+
+            <kendo-grid-column field="rentalStatus" title="Rental Status" [width]="156"></kendo-grid-column>
+
+            <kendo-grid-column field="browsingBranch" title="Borrowing Branch" [width]="250"></kendo-grid-column>
+            <kendo-grid-column field="startDate" title="Start Date" [width]="145"></kendo-grid-column>
+
+            <kendo-grid-column field="estimatedReturnDate" title="Est Rtn Date" [width]="151"></kendo-grid-column>
+
+            <kendo-grid-column field="transportationReq" title="Transportation Req" >
+                <ng-template  kendoGridCellTemplate let-dataItem>
+                    <span title="{{dataItem.transportationReq}}">
+                        {{dataItem.transportationReq}}
+                    </span>
+                </ng-template>
+            </kendo-grid-column>
+
+            
+
+
+        </kendo-grid>
     </div>
+    <div class="more">See More</div>
     <hr>
-    <div class="tabel2">
+    <div class="tabel tabel3 I-Need-One-Requests" >
+        <label for="">
+            I Need One Requests
+        </label>
+        <kendo-grid [data]="list" [size]="'small'">
+            <kendo-grid-column field="assetCategory" title="Asset Category" [width]="180"></kendo-grid-column>
+            <kendo-grid-column field="assetType" title="Asset Type" [width]="180"></kendo-grid-column>
 
-    </div>
-    <hr>
-    <div class="tabel3">
+            <kendo-grid-column field="startDate" title="Start Date" [width]="145"></kendo-grid-column>
 
+            <kendo-grid-column field="estRtnDate" title="Est Rtn Date" [width]="151"></kendo-grid-column>
+
+            <kendo-grid-column field="qty" title="Qty" [width]="99"></kendo-grid-column>
+
+            <kendo-grid-column field="branch" title="Branch" [width]="160">
+                <ng-template  kendoGridCellTemplate let-dataItem>
+                    <span title="{{dataItem.branch}}">
+                        {{dataItem.branch}}
+                    </span>
+                </ng-template>
+            </kendo-grid-column>
+            <kendo-grid-column field="requestBy" title="Request By" [width]="160"></kendo-grid-column>
+
+            <kendo-grid-column field="transportationReq" title="Transportation Req" [width]="194"></kendo-grid-column>
+
+            <kendo-grid-column field="reason" title="Reason" [width]="160"></kendo-grid-column>
+
+                        
+        </kendo-grid>
     </div>
 </div>
