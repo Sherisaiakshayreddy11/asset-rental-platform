@@ -4,13 +4,13 @@
     display: flex;
 }
 .left {
-    width: 90%;
+    
     display: flex;
     align-items: center;
    
 }
 .right {
-    width: 10%;
+    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -37,9 +37,40 @@ p{
     height: 54px;
     padding: 20px;
 }
+.fnt1 {
+   
+    display: none;
+}
 .hub {
     padding: 20px;
 }
 .mnu {
     padding: 10px;
+}
+
+
+@media only screen and (max-width: 1035px) {
+    .fnt1 {
+        display: inline;
+        color: black;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hub {
+        display: none;
+    }
+    .asse {
+        width: 50%;
+    }
+    .asse p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 554px ){
+    .asse p {
+        font-size: 12px;
+    }
 }

@@ -4,7 +4,7 @@
             Conflicts
             
         </label>
-        <kendo-grid [data]="dataItems" [size]="'small'" [scrollable]="'none'">
+        <kendo-grid [data]="dataItems" [size]="'small'" >
             <kendo-grid-column field="assetNumber" title="Asset Number" [width]="100" class="abc" >
                 <ng-template kendoGridCellTemplate let-dataItem>
                     <span style="color:#1C77D6;text-decoration: underline;">
@@ -37,8 +37,9 @@
     <hr>
     <div class="tabel Upcoming-Reservations">
         <div class="ann" >
+            
             <label for="">Upcoming Reservations</label>
-            <div style="float: right;">
+            <div class="nye">
                 <kendo-chip class="ac">All</kendo-chip>
                 <kendo-chip >Next 3 Days</kendo-chip>
                 <kendo-chip >Next 1 Week</kendo-chip>
@@ -50,7 +51,7 @@
             </div>
         </div>
         
-        <kendo-grid [data]="listItems" [size]="'small'" [scrollable]="'none'">
+        <kendo-grid [data]="listItems" [size]="'small'" >
             <kendo-grid-column field="asset" title="Asset #" [width]="115">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     <span style="color:#1C77D6;text-decoration: underline;">

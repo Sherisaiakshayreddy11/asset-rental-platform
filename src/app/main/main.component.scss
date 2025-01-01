@@ -39,12 +39,72 @@ label {
     margin-bottom: 10px;
     justify-content: space-between;
 }
+@media only screen and (min-width: 734px) {
+    .bl {
+        width: 13.66%;
+        
+   
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        display: block;
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .chips {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .col-8{
+        width: 100%;
+    }
+    .chips .bl {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .row {
+        display: block;
+        width: 100%;
+    }
+    .chips {
+        margin-top: 10px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+       
+    }
+    .chips .bl {
+        margin-left: 0px;
+    }
+
+   
+    .col-4 {
+        width: 100%;
+
+    }
+    .col-6 {
+        width: 50%;
+    }
+    
+}
 .bl {
    
     border: 1px solid #E296A9;
     height: 75px;
-    margin-left: 10px;
-    width: 13.66%;
+    margin-left:10px;
+   
     display: flex;
     align-items: center;
     padding: 10px;
